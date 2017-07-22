@@ -11,8 +11,6 @@ install:
   - npm install hexo-cli -g
   - npm install hexo-renderer-jade@0.3.0 --save
   - npm install hexo-renderer-sass --save
-  - npm install hexo-material
-  - cp -R node_modules/hexo-material/ themes/material
 build_script:
   - hexo generate
 
