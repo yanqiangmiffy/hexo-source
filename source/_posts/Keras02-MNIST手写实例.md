@@ -1,4 +1,6 @@
-
+---
+title: Keras实现简单的手写数字识别
+---
 # Keras实现简单的手写数字识别
 
 [参考](http://www.cnblogs.com/yqtm/p/6924939.html)
