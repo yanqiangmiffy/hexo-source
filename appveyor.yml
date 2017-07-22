@@ -2,7 +2,7 @@ clone_depth: 5
 
 environment:
   access_token:
-    secure: 4GzUBvaNj6pvLTFVjVCRyDqFtw6Lcr4dSKHwP/BokHH/OUvTXFUQkCF2kwoR+cyD
+    secure: DjXsh5dzwCB9M0XMwVTtTzzA1e3uczmjrGEJMN01sVBsKVtd43w3NFsWSl2vIxWm
 
 install:
   - node --version
