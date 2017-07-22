@@ -1,7 +1,7 @@
 ---
 title: Keras实现简单的手写数字识别
 ---
-# Keras实现简单的手写数字识别
+
 
 [参考](http://www.cnblogs.com/yqtm/p/6924939.html)
 文中代码有点小bug,加以改正。顺带才了下数据集的坑
