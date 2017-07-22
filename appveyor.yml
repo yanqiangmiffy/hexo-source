@@ -9,7 +9,7 @@ install:
   - npm --version
   - npm install
   - npm install hexo-cli -g
-
+  - npm install hexo-material
 build_script:
   - hexo generate
 
