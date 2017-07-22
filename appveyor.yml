@@ -12,7 +12,8 @@ install:
   - npm install hexo-renderer-jade@0.3.0 --save
   - npm install hexo-renderer-sass --save
 build_script:
-  - git clone https://github.com/tufu9441/maupassant-hexo.git themes/maupassant
+  - npm install hexo-material
+  - cp -R node_modules/hexo-material/ themes/material
   - hexo generate
 
 artifacts:
