@@ -1,7 +1,9 @@
 ---
 title: Keras实现简单的手写数字识别
 ---
-
+<Excerpt in index | 首页摘要> 
+Keras实现简单的手写数字识别：构建模型、编译模型、训练数据、输出
+<!-- more -->
 
 [参考](http://www.cnblogs.com/yqtm/p/6924939.html)
 文中代码有点小bug,加以改正。顺带才了下数据集的坑
