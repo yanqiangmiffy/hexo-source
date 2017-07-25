@@ -1,5 +1,5 @@
 title: 使用Python和R语言从头开始理解和编写神经网络
-date: 2013/7/24 14:46:25
+date: 2017/7/24 14:46:25
 ---
 <Excerpt in index | 首页摘要> 
 本篇文章是[原文](https://www.analyticsvidhya.com/blog/2017/05/neural-network-from-scratch-in-python-and-r/)的翻译过来的，自己在学习和阅读之后觉得文章非常不错，文章结构清晰，由浅入深、从理论到代码实现，最终将神经网络的概念和工作流程呈现出来。
