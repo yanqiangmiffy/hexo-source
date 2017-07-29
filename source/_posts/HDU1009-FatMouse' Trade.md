@@ -4,7 +4,7 @@ date: 2017-07-24 14:54:03
 ---
 <Excerpt in index | 首页摘要> 
 
-HDU 1009 FatMouse’ Trade
+HDU 1009 FatMouse’ Trade 题解报告
 <!-- more -->
 
 # 问题描述
