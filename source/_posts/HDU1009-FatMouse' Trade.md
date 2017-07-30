@@ -1,10 +1,10 @@
 ---
 title: HDU1009-FatMouse' Trade
-date: 2017-07-29 23:54:03
+date: 2017-07-29 14:54:03
 ---
 <Excerpt in index | 首页摘要> 
 
-HDU 1009 FatMouse’ Trade 题解报告
+HDU 1009 FatMouse’ Trade
 <!-- more -->
 
 # 问题描述
@@ -24,7 +24,7 @@ The input consists of multiple test cases. Each test case begins with a line con
 For each test case, print in a single line a real number accurate up to 3 decimal places, which is the maximum amount of JavaBeans that FatMouse can obtain.
 
 ```
-# 样例输入
+# 样例输入：
 ```
 5 3
 7 2
@@ -37,7 +37,7 @@ For each test case, print in a single line a real number accurate up to 3 decima
 -1 -1
 
 ```
-# 样例输出
+# 样例输出：
 
 ```
 13.333
@@ -48,51 +48,45 @@ For each test case, print in a single line a real number accurate up to 3 decima
 
 贪心题，由于所有的绿豆都是一样的，所以如果老鼠想要换到最多的绿豆，便可以换猫控制的房间里面最便宜的绿豆，也就是说先换取单位数量的绿豆所需要最少的猫粮的房间里的绿豆，这样就可以保证换到的绿豆是最多的。具体实现可以用一个结构体，里面保存每个房间里面有的绿豆的数量和换取这个房间的绿豆时所需要的猫粮的数量和换取这个房间的 单位重量的绿豆所需要的猫粮数（以下简称单价），然后再按照单价升序给这些结构体排一次序，这时就可以从最便宜的绿豆开始换了。
 
-# 代码
-```
+# 代码：
+```C
 #include<iostream>
-#include<algorithm>
 #include<stdio.h>
+#include<algorithm>
+#include<iomanip>
 using namespace std;
-struct stu
-{
-    int a;
-    int b;
-    double rate;
-}s[1005];
-bool cmp(stu x,stu y)
-{
-    if(x.rate!=y.rate)
-    return x.rate>y.rate;
+struct house{
+    int bean_num;//每个房间含有的豆子数量
+    int cost;//获取bean_num个豆子，所需要的猫粮数
+    double rate;//性价比
+}h[1005];
+
+bool cmp(house a,house b){
+    if(a.rate!=b.rate)
+    return a.rate>b.rate;
     else
-    return x.a<y.a;
+    return a.bean_num<b.bean_num;
 }
-int main()
-{   //freopen("1.txt","r",stdin);
+int main(){
     int m,n,i;
-    double cnt;
-    while(scanf("%d %d",&m,&n)!=EOF)
-    {   if(m==-1&&n==-1)break;
-        cnt=0;
-        for(i=0;i<n;i++)
-        {
-            scanf("%d %d",&s[i].a,&s[i].b);
-            s[i].rate=s[i].a*1.0/s[i].b;
+    double gains;
+    while(cin>>m>>n&&m!=-1&&n!=-1){
+        gains=0;
+        for(i=0;i<n;i++){
+            cin>>h[i].bean_num>>h[i].cost;
+            h[i].rate=h[i].bean_num*1.0/h[i].cost;
         }
-        sort(s,s+n,cmp);
-        for(i=0;i<n;i++)
-        {
-            if(m>=s[i].b)
-            {
-                m-=s[i].b;
-                cnt+=s[i].a;
+        sort(h,h+n,cmp);
+        for(i=0;i<n;i++){
+            if(m>h[i].cost){
+                m-=h[i].cost;
+                gains+=h[i].bean_num;
+            }else{
+                gains+=h[i].rate*m;
+                break;
             }
-           else
-           {
-               cnt+=s[i].rate*m;break;
-           }
         }
-     printf("%.3lf\n",cnt);
+        cout<<setiosflags(ios::fixed)<<setprecision(3)<<gains<<endl;
     }
     return 0;
 }
