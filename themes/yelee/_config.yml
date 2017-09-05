@@ -11,7 +11,7 @@ menu:
   所有文章: /archives/
   #随笔: /tags/随笔
   标签云: /tags/
-  关于我: /about/
+  关于我: https://yanqiangmiffy.github.io/resume/
 
 # Link to your avatar | 填写头像地址
 avatar: /img/avatar.png
