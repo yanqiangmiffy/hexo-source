@@ -1,4 +1,4 @@
-title: 神经网络学习第四周编程作业一-Building your Deep Neural Network: Step by Step
+title: 第四周编程作业1-Building your Deep Neural Network: Step by Step
 date: 2017/09/15 09:58:25
 tags: [机器学习,神经网络,深度学习,深层神经网络]
 
@@ -7,6 +7,7 @@ tags: [机器学习,神经网络,深度学习,深层神经网络]
 <Excerpt in index | 首页摘要> 
 吴恩达的神经网络学习第四周作业（-）
 <!-- more -->
+
 # Building your Deep Neural Network: Step by Step
 
 Welcome to your week 4 assignment (part 1 of 2)! You have previously trained a 2-layer Neural Network (with a single hidden layer). This week, you will build a deep neural network, with as many layers as you want!
