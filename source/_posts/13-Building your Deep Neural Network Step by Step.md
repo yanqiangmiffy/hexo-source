@@ -1,4 +1,4 @@
-title: 第四周编程作业1-Building your Deep Neural Network: Step by Step
+title: 第四周编程作业Building your Deep Neural Network: Step by Step
 date: 2017/09/15 09:58:25
 tags: [机器学习,神经网络,深度学习,深层神经网络]
 
