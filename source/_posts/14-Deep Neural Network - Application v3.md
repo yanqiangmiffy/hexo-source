@@ -1,13 +1,12 @@
-title: 第四周编程作业Deep Neural Network for Image Classification: Application
-date: 2017/09/15 16:45:25
-tags: [神经网络,深度学习,深层神经网络应用]
+title: 神经网络学习第四周编程作业
+date: 2017/09/15 17:06:25
+tags: [神经网络,深度学习,分类问题,深度学习项目]
 
 ---
 
 <Excerpt in index | 首页摘要> 
-吴恩达的神经网络学习第四周作业（-）
+吴恩达的神经网络学习第四周作业Deep Neural Network for Image Classification: Application
 <!-- more -->
-
 
 # Deep Neural Network for Image Classification: Application
 
